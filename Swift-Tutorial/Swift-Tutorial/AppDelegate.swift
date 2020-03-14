@@ -33,8 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func square(_ number: Int) -> Int {
-        let result = number * number
-        return result
+        return number * number
     }
 
 
