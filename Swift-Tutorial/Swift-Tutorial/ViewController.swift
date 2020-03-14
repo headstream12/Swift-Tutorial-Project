@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    private func tryEven(number: Int) -> Bool {
+    private func isEven(number: Int) -> Bool {
         return number % 2 == 0
     }
 
