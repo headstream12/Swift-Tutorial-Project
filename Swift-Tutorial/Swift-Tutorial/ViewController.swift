@@ -12,10 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("hello")
         // Do any additional setup after loading the view.
     }
-
+    
+    private func isEven(number: Int) -> Bool {
+        return number % 2 == 0
+    }
 
 }
 
