@@ -8,14 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class BlueViewController: UIViewController {
+    
+    @IBOutlet weak var childView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("hello")
-        // Do any additional setup after loading the view.
+        
+        print("frame \(childView.frame)")
+        print("bounds \(childView.bounds)")
     }
-
-
 }
-
