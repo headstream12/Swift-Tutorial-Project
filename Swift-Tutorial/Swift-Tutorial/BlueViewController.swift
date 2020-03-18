@@ -17,5 +17,6 @@ class BlueViewController: UIViewController {
         
         print("frame \(childView.frame)")
         print("privet")
+        print("12254")
     }
 }
