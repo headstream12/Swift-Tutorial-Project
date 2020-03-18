@@ -16,6 +16,6 @@ class BlueViewController: UIViewController {
         super.viewDidLoad()
         
         print("frame \(childView.frame)")
-        print("bounds \(childView.bounds)")
+        print("12254")
     }
 }
