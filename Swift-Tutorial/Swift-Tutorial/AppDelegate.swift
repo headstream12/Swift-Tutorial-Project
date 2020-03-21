@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     ) -> Bool {
         true
     }
+    
 
     func applicationWillEnterForeground(_ application: UIApplication) {
     }
