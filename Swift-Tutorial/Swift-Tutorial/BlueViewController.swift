@@ -9,12 +9,10 @@
 import UIKit
 
 class BlueViewController: UIViewController {
-    
     @IBOutlet weak var childView: UIView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         print("frame \(childView.frame)")
         print("privet")
         print("12254")

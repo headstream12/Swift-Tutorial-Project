@@ -1,12 +1,10 @@
 excluded: # paths to ignore during linting. Takes precedence over `included`.
     - Carthage
     - Pods
-    - PhoneNumberKit
     - Generated
-    
+
 disabled_rules: # rule identifiers to exclude from running
     - block_based_kvo # Swift implementatoin has bugs which lead to a crash - https://bugs.swift.org/browse/SR-5116, https://bugs.swift.org/browse/SR-5117
-    - trailing_comma  # There should be a comma after the last item in the list
 
 opt_in_rules: # some rules are only opt-in
     - attributes
@@ -58,7 +56,7 @@ opt_in_rules: # some rules are only opt-in
     - pattern_matching_keywords
     # - prefixed_toplevel_constant
     - private_action
-    - private_outlet
+    #- private_outlet
 #    - prohibited_interface_builder
     - prohibited_super_call
     - quick_discouraged_call
@@ -86,11 +84,11 @@ opt_in_rules: # some rules are only opt-in
     - vertical_whitespace_opening_braces
     - xct_specific_matcher
     - yoda_condition
-# optional    
+# optional
     - quick_discouraged_focused_test
     - quick_discouraged_pending_test
 
-line_length: 200
+line_length: 140
 
 identifier_name:
     severity: warning
@@ -99,10 +97,6 @@ identifier_name:
     excluded:
         - id
         - ID
-        - rx
-        - vc
-        - nc
-        - vm
     validates_start_with_lowercase: true
 
 function_body_length: 80
