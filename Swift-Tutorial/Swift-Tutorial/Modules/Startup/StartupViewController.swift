@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  StartupViewController.swift
 //  Swift-Tutorial
 //
 //  Created by Ilya Glazunov on 14.03.2020.
@@ -8,17 +8,25 @@
 
 import UIKit
 
-class BlueViewController: UIViewController {
+// swiftlint:disable implicitly_unwrapped_optional
+
+class StartupViewController: UIViewController {
 
     @IBOutlet weak var backgroundImageView: UIImageView!
+    var presenter: StartupPresenter!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        presenter.viewDidLoad()
     }
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 
-        print(backgroundImageView.frame)
+    }
+
+    @IBAction private func didTapWeatherListButton(_ sender: UIButton) {
+        presenter.didTapWeatherListButton()
     }
 }

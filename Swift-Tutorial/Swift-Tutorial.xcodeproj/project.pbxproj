@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		25132E8540B63203A080AA43 /* Pods_Swift_Tutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5BE1CCDE435E9E9ACF79F7 /* Pods_Swift_Tutorial.framework */; };
+		7B4CD477242D2EEA00D6B765 /* StartupAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4CD476242D2EEA00D6B765 /* StartupAssembly.swift */; };
+		7BA4451D242D24F1008492EA /* StartupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA4451C242D24F1008492EA /* StartupPresenter.swift */; };
+		7BA44521242D27DC008492EA /* StartupRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA44520242D27DC008492EA /* StartupRouter.swift */; };
 		7BB28A78241D39CA008165BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB28A77241D39CA008165BE /* AppDelegate.swift */; };
-		7BB28A7C241D39CA008165BE /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB28A7B241D39CA008165BE /* BlueViewController.swift */; };
+		7BB28A7C241D39CA008165BE /* StartupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB28A7B241D39CA008165BE /* StartupViewController.swift */; };
 		7BB28A7F241D39CA008165BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB28A7D241D39CA008165BE /* Main.storyboard */; };
 		7BB28A81241D39CD008165BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BB28A80241D39CD008165BE /* Assets.xcassets */; };
 		7BB28A84241D39CD008165BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB28A82241D39CD008165BE /* LaunchScreen.storyboard */; };
@@ -17,9 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B4CD476242D2EEA00D6B765 /* StartupAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupAssembly.swift; sourceTree = "<group>"; };
+		7BA4451C242D24F1008492EA /* StartupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupPresenter.swift; sourceTree = "<group>"; };
+		7BA44520242D27DC008492EA /* StartupRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupRouter.swift; sourceTree = "<group>"; };
 		7BB28A74241D39CA008165BE /* Swift-Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB28A77241D39CA008165BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7BB28A7B241D39CA008165BE /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		7BB28A7B241D39CA008165BE /* StartupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupViewController.swift; sourceTree = "<group>"; };
 		7BB28A7E241D39CA008165BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BB28A80241D39CD008165BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BB28A83241D39CD008165BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +56,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7BA44519242D24AB008492EA /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				7BB28A7B241D39CA008165BE /* StartupViewController.swift */,
+				7BA4451C242D24F1008492EA /* StartupPresenter.swift */,
+				7BA44520242D27DC008492EA /* StartupRouter.swift */,
+				7B4CD476242D2EEA00D6B765 /* StartupAssembly.swift */,
+			);
+			path = Startup;
+			sourceTree = "<group>";
+		};
+		7BA4451A242D24B7008492EA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7BA44519242D24AB008492EA /* Startup */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		7BB28A6B241D39CA008165BE = {
 			isa = PBXGroup;
 			children = (
@@ -72,12 +97,12 @@
 			isa = PBXGroup;
 			children = (
 				7BB28A77241D39CA008165BE /* AppDelegate.swift */,
-				7BB28A7B241D39CA008165BE /* BlueViewController.swift */,
 				7BEFF0EE2422977600FB4F7A /* RedViewController.swift */,
 				7BB28A7D241D39CA008165BE /* Main.storyboard */,
 				7BB28A80241D39CD008165BE /* Assets.xcassets */,
 				7BB28A82241D39CD008165BE /* LaunchScreen.storyboard */,
 				7BB28A85241D39CD008165BE /* Info.plist */,
+				7BA4451A242D24B7008492EA /* Modules */,
 			);
 			path = "Swift-Tutorial";
 			sourceTree = "<group>";
@@ -207,9 +232,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BB28A7C241D39CA008165BE /* BlueViewController.swift in Sources */,
+				7BB28A7C241D39CA008165BE /* StartupViewController.swift in Sources */,
 				7BEFF0EF2422977600FB4F7A /* RedViewController.swift in Sources */,
 				7BB28A78241D39CA008165BE /* AppDelegate.swift in Sources */,
+				7B4CD477242D2EEA00D6B765 /* StartupAssembly.swift in Sources */,
+				7BA44521242D27DC008492EA /* StartupRouter.swift in Sources */,
+				7BA4451D242D24F1008492EA /* StartupPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

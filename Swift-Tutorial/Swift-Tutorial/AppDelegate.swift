@@ -16,7 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
-        true
+        window = UIWindow(frame: UIScreen.main.bounds)
+
+        let navigationController = StartupAssembly().create()
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+
+        return true
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
