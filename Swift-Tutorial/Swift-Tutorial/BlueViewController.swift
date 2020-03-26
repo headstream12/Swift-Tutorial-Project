@@ -9,12 +9,16 @@
 import UIKit
 
 class BlueViewController: UIViewController {
-    @IBOutlet weak var childView: UIView!
+
+    @IBOutlet weak var backgroundImageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("frame \(childView.frame)")
-        print("privet")
-        print("12254")
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
+        print(backgroundImageView.frame)
     }
 }

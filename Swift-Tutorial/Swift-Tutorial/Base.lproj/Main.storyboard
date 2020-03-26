@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -13,32 +13,41 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="BlueViewController" customModule="Swift_Tutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tEu-ux-eul">
-                                <rect key="frame" x="87" y="133" width="233" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="3a1-1N-g76">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACE-nj-7hQ">
+                                <rect key="frame" x="135" y="407" width="153" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3a1-1N-g76" secondAttribute="trailing" id="BOE-3n-Bgb"/>
+                            <constraint firstItem="3a1-1N-g76" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CNZ-AT-UkX"/>
+                            <constraint firstItem="3a1-1N-g76" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="dfA-XE-ODa"/>
+                            <constraint firstItem="3a1-1N-g76" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gUF-Q9-Rry"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="childView" destination="tEu-ux-eul" id="v24-dO-SxK"/>
+                        <outlet property="backgroundImageView" destination="3a1-1N-g76" id="pT9-S9-nV1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-755.07246376811599" y="109.82142857142857"/>
+            <point key="canvasLocation" x="-621.60000000000002" y="109.35960591133005"/>
         </scene>
         <!--Red View Controller-->
         <scene sceneID="jdy-tt-nCy">
             <objects>
                 <viewController storyboardIdentifier="RedViewController" id="CCa-p1-GeR" customClass="RedViewController" customModule="Swift_Tutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IWe-55-G4V">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="7W5-BT-y7V"/>
@@ -46,7 +55,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zP6-zU-WaV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="43" y="110"/>
+            <point key="canvasLocation" x="623" y="110"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="1183" height="2560"/>
+    </resources>
 </document>

@@ -81,7 +81,6 @@ opt_in_rules: # some rules are only opt-in
     - unused_setter_value
     - vertical_parameter_alignment_on_call
     - vertical_whitespace_closing_braces
-    - vertical_whitespace_opening_braces
     - xct_specific_matcher
     - yoda_condition
 # optional
@@ -114,19 +113,5 @@ redundant_type_annotation:
 number_separator:
     minimum_length: 5
 
-custom_rules:
-  empty_lines_after_type_declarations:
-    included: ".*.swift"
-    name: "Empty lines after type declarations"
-    regex: '(struct|class|enum|protocol|extension) ([\w]+(:\s*[\w\s,]+)* )\{\n\n'
-    message: "There should be no empty lines after type declarations"
-    severity: error
-  # non-localized_cyrillic_strings:
-  #   included: ".*.swift"
-  #   name: "Non-localized cyrillic strings"
-  #   regex: "[а-яА-Я]+"
-  #   match_kinds: string
-  #   message: "Cyrillic strings should be localized"
-  #   severity: error
 
 warning_threshold: 1
