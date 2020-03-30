@@ -5,7 +5,7 @@ excluded: # paths to ignore during linting. Takes precedence over `included`.
 
 disabled_rules: # rule identifiers to exclude from running
     - block_based_kvo # Swift implementatoin has bugs which lead to a crash - https://bugs.swift.org/browse/SR-5116, https://bugs.swift.org/browse/SR-5117
-
+    - trailing_whitespace
 opt_in_rules: # some rules are only opt-in
     - attributes
     - anyobject_protocol
