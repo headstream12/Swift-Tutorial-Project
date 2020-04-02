@@ -17,6 +17,7 @@
 		7B5F702C242F4D1E00CB31EF /* WeatherListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5F7028242F4D1E00CB31EF /* WeatherListAssembly.swift */; };
 		7B5F7030242F514D00CB31EF /* WeatherListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5F702E242F514D00CB31EF /* WeatherListCell.swift */; };
 		7B5F7031242F514D00CB31EF /* WeatherListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B5F702F242F514D00CB31EF /* WeatherListCell.xib */; };
+		7B690382243665CC00F90F5A /* WeatherListCodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B690381243665CC00F90F5A /* WeatherListCodeCell.swift */; };
 		7BA4451D242D24F1008492EA /* StartupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA4451C242D24F1008492EA /* StartupPresenter.swift */; };
 		7BA44521242D27DC008492EA /* StartupRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA44520242D27DC008492EA /* StartupRouter.swift */; };
 		7BB28A78241D39CA008165BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB28A77241D39CA008165BE /* AppDelegate.swift */; };
@@ -36,6 +37,7 @@
 		7B5F7028242F4D1E00CB31EF /* WeatherListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListAssembly.swift; sourceTree = "<group>"; };
 		7B5F702E242F514D00CB31EF /* WeatherListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListCell.swift; sourceTree = "<group>"; };
 		7B5F702F242F514D00CB31EF /* WeatherListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherListCell.xib; sourceTree = "<group>"; };
+		7B690381243665CC00F90F5A /* WeatherListCodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListCodeCell.swift; sourceTree = "<group>"; };
 		7BA4451C242D24F1008492EA /* StartupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupPresenter.swift; sourceTree = "<group>"; };
 		7BA44520242D27DC008492EA /* StartupRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupRouter.swift; sourceTree = "<group>"; };
 		7BB28A74241D39CA008165BE /* Swift-Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +105,7 @@
 			children = (
 				7B5F702E242F514D00CB31EF /* WeatherListCell.swift */,
 				7B5F702F242F514D00CB31EF /* WeatherListCell.xib */,
+				7B690381243665CC00F90F5A /* WeatherListCodeCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B5F7030242F514D00CB31EF /* WeatherListCell.swift in Sources */,
+				7B690382243665CC00F90F5A /* WeatherListCodeCell.swift in Sources */,
 				7BB28A7C241D39CA008165BE /* StartupViewController.swift in Sources */,
 				7B3F58DC242F408E001E9393 /* Strings.swift in Sources */,
 				7BB28A78241D39CA008165BE /* AppDelegate.swift in Sources */,

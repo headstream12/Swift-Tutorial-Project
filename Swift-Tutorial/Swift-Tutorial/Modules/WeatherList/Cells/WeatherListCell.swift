@@ -9,5 +9,12 @@
 import UIKit
 
 class WeatherListCell: UITableViewCell {
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var temperatureLabel: UILabel!
+    @IBOutlet weak var wetDescriptionLabel: UILabel!
+    @IBOutlet weak var wetValueLabel: UILabel!
+    @IBOutlet weak var rainChanceDescriptionLabel: UILabel!
+    @IBOutlet weak var rainChanceValueLabel: UILabel!
+    @IBOutlet weak var resultDescriptionLabel: UILabel!
+    @IBOutlet weak var resultValueLabel: UILabel!
 }

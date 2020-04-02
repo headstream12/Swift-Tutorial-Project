@@ -25,6 +25,7 @@ class WeatherListViewController: UIViewController {
     private func setupViews() {
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.register(Wea.self, forCellReuseIdentifier: String(describing: WeatherListCell.self))
         tableView.register(
             UINib(
                 nibName: String(describing: WeatherListCell.self),

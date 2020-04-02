@@ -28,7 +28,7 @@ class StartupViewController: UIViewController {
     }
 
     private func setupViews() {
-
+        
     }
 
     @IBAction private func didTapWeatherListButton(_ sender: UIButton) {
