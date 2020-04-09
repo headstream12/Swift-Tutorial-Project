@@ -15,4 +15,12 @@ enum Strings {
         static let firstButtonTitle = "К погоде"
         static let secondButtonTitle = "О нас"
     }
+
+    enum WeatherList {
+        static let sunny = "Солнечно"
+        static let cloudy = "Облачно"
+        static let cold = "Холодно"
+        static let washAllowed = "Можно мыть"
+        static let washNotRecommended = "Мыть не рекомендуется"
+    }
 }

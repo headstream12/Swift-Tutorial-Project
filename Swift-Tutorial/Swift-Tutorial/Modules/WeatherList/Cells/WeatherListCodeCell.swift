@@ -1,9 +1,9 @@
 //
 //  WeatherListCodeCell.swift
-//  Swift-Tutorial
+//  NewProject
 //
-//  Created by Ilya Glazunov on 02.04.2020.
-//  Copyright © 2020 Ilya Glazunov. All rights reserved.
+//  Created by Aleksey on 04.04.2020.
+//  Copyright © 2020 Aleksey Mikhlev. All rights reserved.
 //
 
 import UIKit
@@ -13,7 +13,6 @@ class WeatherListCodeCell: UITableViewCell {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
         label.textColor = .black
-
         return label
     }()
 
@@ -21,7 +20,6 @@ class WeatherListCodeCell: UITableViewCell {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
         label.textColor = .black
-
         return label
     }()
 
@@ -29,7 +27,6 @@ class WeatherListCodeCell: UITableViewCell {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
         label.textColor = .black
-
         return label
     }()
 
@@ -37,7 +34,6 @@ class WeatherListCodeCell: UITableViewCell {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
         label.textColor = .black
-
         return label
     }()
 
@@ -50,18 +46,18 @@ class WeatherListCodeCell: UITableViewCell {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 12, weight: .medium)
         label.textColor = .lightGray
-
         return label
     }
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-
         setupViews()
+        makeConstraints()
     }
 
+    @available(*, unavailable)
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError("init?(coder: NSCoder) has not been implemented")
     }
 
     private func setupViews() {
@@ -73,6 +69,8 @@ class WeatherListCodeCell: UITableViewCell {
         contentView.addSubview(wetValueLabel)
         contentView.addSubview(rainChanceValueLabel)
         contentView.addSubview(resultValueLabel)
+
+        contentView.backgroundColor = .brown
     }
 
     private func makeConstraints() {
@@ -92,7 +90,8 @@ class WeatherListCodeCell: UITableViewCell {
 
         NSLayoutConstraint.activate([
             temperatureLabel.leadingAnchor.constraint(equalTo: dateLabel.trailingAnchor, constant: 5),
-            temperatureLabel.centerYAnchor.constraint(equalTo: dateLabel.centerYAnchor)
+            temperatureLabel.centerYAnchor.constraint(equalTo: dateLabel.centerYAnchor),
+            temperatureLabel.trailingAnchor.constraint(greaterThanOrEqualTo: rainChanceDescriptionLabel.leadingAnchor, constant: 10)
         ])
 
         NSLayoutConstraint.activate([
@@ -103,12 +102,47 @@ class WeatherListCodeCell: UITableViewCell {
 
         NSLayoutConstraint.activate([
             wetValueLabel.leadingAnchor.constraint(equalTo: wetDescriptionLabel.trailingAnchor, constant: 5),
-            wetValueLabel.centerYAnchor.constraint(equalTo: wetDescriptionLabel.centerYAnchor)
+            wetValueLabel.centerYAnchor.constraint(equalTo: wetDescriptionLabel.centerYAnchor),
+            wetValueLabel.trailingAnchor.constraint(greaterThanOrEqualTo: resultValueLabel.leadingAnchor, constant: 10)
         ])
 
-        //TODO: Доделать верстку
+        NSLayoutConstraint.activate([
+            rainChanceDescriptionLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16)
+        ])
 
-        dateLabel.setContentHuggingPriority(.init(rawValue: 251), for: .vertical)
-        dateLabel.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+        NSLayoutConstraint.activate([
+            rainChanceValueLabel.centerYAnchor.constraint(equalTo: rainChanceDescriptionLabel.centerYAnchor),
+            rainChanceValueLabel.leadingAnchor.constraint(equalTo: rainChanceDescriptionLabel.trailingAnchor, constant: 5),
+            rainChanceDescriptionLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16)
+        ])
+
+        NSLayoutConstraint.activate([
+            resultDescriptionLabel.topAnchor.constraint(equalTo: rainChanceDescriptionLabel.bottomAnchor, constant: 16),
+            resultDescriptionLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16)
+        ])
+
+        NSLayoutConstraint.activate([
+            resultValueLabel.centerYAnchor.constraint(equalTo: resultDescriptionLabel.centerYAnchor),
+            resultValueLabel.leadingAnchor.constraint(equalTo: resultDescriptionLabel.trailingAnchor, constant: 5),
+            resultValueLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16)
+        ])
+
+        dateLabel.setContentHuggingPriority(.init(rawValue: 251), for: .horizontal)
+        dateLabel.setContentHuggingPriority(.init(rawValue: 248), for: .vertical)
+
+        temperatureLabel.setContentHuggingPriority(.init(rawValue: 248), for: .horizontal)
+        temperatureLabel.setContentHuggingPriority(.init(rawValue: 252), for: .vertical)
+
+        wetDescriptionLabel.setContentHuggingPriority(.init(rawValue: 251), for: .horizontal)
+        wetDescriptionLabel.setContentHuggingPriority(.defaultLow, for: .vertical)
+
+        rainChanceValueLabel.setContentHuggingPriority(.init(rawValue: 251), for: .horizontal)
+        rainChanceValueLabel.setContentHuggingPriority(.init(rawValue: 251), for: .vertical)
+
+        resultDescriptionLabel.setContentHuggingPriority(.init(rawValue: 251), for: .horizontal)
+        resultDescriptionLabel.setContentHuggingPriority(.defaultLow, for: .vertical)
+
+        rainChanceValueLabel.setContentHuggingPriority(.init(rawValue: 251), for: .horizontal)
+        rainChanceValueLabel.setContentHuggingPriority(.defaultLow, for: .vertical)
     }
 }

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Thermometer_Snowflake.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

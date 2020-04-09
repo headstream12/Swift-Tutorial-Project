@@ -13,6 +13,12 @@ import UIKit
 class WeatherListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+
+    var cellModels: [PTableViewCellAnyModel] = [] {
+        didSet {
+            tableView.reloadData()
+        }
+    }
     var presenter: WeatherListPresenter!
 
     override func viewDidLoad() {
@@ -25,37 +31,24 @@ class WeatherListViewController: UIViewController {
     private func setupViews() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(Wea.self, forCellReuseIdentifier: String(describing: WeatherListCell.self))
-        tableView.register(
-            UINib(
-                nibName: String(describing: WeatherListCell.self),
-                bundle: Bundle.main
-            ),
-            forCellReuseIdentifier: String(describing: WeatherListCell.self)
-        )
+        tableView.register(models: [WeatherListHeaderCellModel.self])
+        tableView.register(WeatherListCodeCell.self, forCellReuseIdentifier: String(describing: WeatherListCodeCell.self))
+    }
+}
+
+extension WeatherListViewController {
+    func showData(with cellModels: [PTableViewCellAnyModel]) {
+        self.cellModels = cellModels
     }
 }
 
 extension WeatherListViewController: UITableViewDataSource {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        1
-    }
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        cellModels.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(
-            withIdentifier: String(describing: WeatherListCell.self),
-            for: indexPath
-        ) as? WeatherListCell else {
-            fatalError("Wrong identifier")
-        }
-
-        cell.titleLabel.text = String(Int.random(in: 0...100))
-
-        return cell
+        tableView.dequeueReusableCell(withModel: cellModels[indexPath.row], for: indexPath)
     }
 }
 

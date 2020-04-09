@@ -6,6 +6,6 @@ target 'Swift-Tutorial' do
   use_frameworks!
 
   pod 'SwiftLint'
-
+  pod 'SnapKit'
 
 end

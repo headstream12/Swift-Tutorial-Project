@@ -3,11 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		25132E8540B63203A080AA43 /* Pods_Swift_Tutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5BE1CCDE435E9E9ACF79F7 /* Pods_Swift_Tutorial.framework */; };
+		7B0877FC243878580017D7E3 /* WeatherListHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0877FB243878580017D7E3 /* WeatherListHeaderCell.swift */; };
+		7B08780524387A1F0017D7E3 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B08780024387A1F0017D7E3 /* Comfortaa-Bold.ttf */; };
+		7B08780624387A1F0017D7E3 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B08780124387A1F0017D7E3 /* Comfortaa-Light.ttf */; };
+		7B08780724387A1F0017D7E3 /* Comfortaa-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B08780224387A1F0017D7E3 /* Comfortaa-Medium.ttf */; };
+		7B08780824387A1F0017D7E3 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B08780324387A1F0017D7E3 /* Comfortaa-Regular.ttf */; };
+		7B08780924387A1F0017D7E3 /* Comfortaa-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B08780424387A1F0017D7E3 /* Comfortaa-SemiBold.ttf */; };
+		7B08780B24387ACC0017D7E3 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B08780A24387ACC0017D7E3 /* Fonts.swift */; };
+		7B08780D24387B9F0017D7E3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B08780C24387B9F0017D7E3 /* Colors.swift */; };
+		7B08781124387D0B0017D7E3 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B08781024387D0B0017D7E3 /* UIView+Extensions.swift */; };
 		7B3F58D9242F3FB7001E9393 /* StartupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3F58D8242F3FB7001E9393 /* StartupViewModel.swift */; };
 		7B3F58DC242F408E001E9393 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3F58DB242F408E001E9393 /* Strings.swift */; };
 		7B4CD477242D2EEA00D6B765 /* StartupAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4CD476242D2EEA00D6B765 /* StartupAssembly.swift */; };
@@ -25,9 +34,24 @@
 		7BB28A7F241D39CA008165BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB28A7D241D39CA008165BE /* Main.storyboard */; };
 		7BB28A81241D39CD008165BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BB28A80241D39CD008165BE /* Assets.xcassets */; };
 		7BB28A84241D39CD008165BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB28A82241D39CD008165BE /* LaunchScreen.storyboard */; };
+		7BC48274243F9EDC005831E0 /* PTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC48273243F9EDC005831E0 /* PTableViewCellModel.swift */; };
+		7BC48276243FA02A005831E0 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC48275243FA02A005831E0 /* UITableView+Extensions.swift */; };
+		7BC4827A243FA0D1005831E0 /* WeatherListHeaderCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC48279243FA0D1005831E0 /* WeatherListHeaderCellModel.swift */; };
+		7BC4827D243FA23A005831E0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC4827C243FA23A005831E0 /* Weather.swift */; };
+		7BC4827F243FA449005831E0 /* DateFormater+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC4827E243FA449005831E0 /* DateFormater+Extensions.swift */; };
+		7BC48281243FA523005831E0 /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC48280243FA523005831E0 /* Date+String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B0877FB243878580017D7E3 /* WeatherListHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListHeaderCell.swift; sourceTree = "<group>"; };
+		7B08780024387A1F0017D7E3 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
+		7B08780124387A1F0017D7E3 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
+		7B08780224387A1F0017D7E3 /* Comfortaa-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Medium.ttf"; sourceTree = "<group>"; };
+		7B08780324387A1F0017D7E3 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
+		7B08780424387A1F0017D7E3 /* Comfortaa-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-SemiBold.ttf"; sourceTree = "<group>"; };
+		7B08780A24387ACC0017D7E3 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		7B08780C24387B9F0017D7E3 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		7B08781024387D0B0017D7E3 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		7B3F58D8242F3FB7001E9393 /* StartupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupViewModel.swift; sourceTree = "<group>"; };
 		7B3F58DB242F408E001E9393 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		7B4CD476242D2EEA00D6B765 /* StartupAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupAssembly.swift; sourceTree = "<group>"; };
@@ -47,6 +71,12 @@
 		7BB28A80241D39CD008165BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BB28A83241D39CD008165BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BB28A85241D39CD008165BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BC48273243F9EDC005831E0 /* PTableViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTableViewCellModel.swift; sourceTree = "<group>"; };
+		7BC48275243FA02A005831E0 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		7BC48279243FA0D1005831E0 /* WeatherListHeaderCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListHeaderCellModel.swift; sourceTree = "<group>"; };
+		7BC4827C243FA23A005831E0 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		7BC4827E243FA449005831E0 /* DateFormater+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormater+Extensions.swift"; sourceTree = "<group>"; };
+		7BC48280243FA523005831E0 /* Date+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
 		C7A82CD4BBAE9B2234F17F00 /* Pods-Swift-Tutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-Tutorial.debug.xcconfig"; path = "Target Support Files/Pods-Swift-Tutorial/Pods-Swift-Tutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		CD2D39B873E9D9BE91A8B1DC /* Pods-Swift-Tutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-Tutorial.release.xcconfig"; path = "Target Support Files/Pods-Swift-Tutorial/Pods-Swift-Tutorial.release.xcconfig"; sourceTree = "<group>"; };
 		EC5BE1CCDE435E9E9ACF79F7 /* Pods_Swift_Tutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_Tutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +102,55 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7B0877FD243879D80017D7E3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7B0877FE243879E50017D7E3 /* Fonts */,
+				7B08780C24387B9F0017D7E3 /* Colors.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7B0877FE243879E50017D7E3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7B0877FF243879EB0017D7E3 /* Comfortaa */,
+				7B08780A24387ACC0017D7E3 /* Fonts.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7B0877FF243879EB0017D7E3 /* Comfortaa */ = {
+			isa = PBXGroup;
+			children = (
+				7B08780024387A1F0017D7E3 /* Comfortaa-Bold.ttf */,
+				7B08780124387A1F0017D7E3 /* Comfortaa-Light.ttf */,
+				7B08780224387A1F0017D7E3 /* Comfortaa-Medium.ttf */,
+				7B08780324387A1F0017D7E3 /* Comfortaa-Regular.ttf */,
+				7B08780424387A1F0017D7E3 /* Comfortaa-SemiBold.ttf */,
+			);
+			path = Comfortaa;
+			sourceTree = "<group>";
+		};
+		7B08780E24387CF90017D7E3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7B08780F24387D010017D7E3 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7B08780F24387D010017D7E3 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				7B08781024387D0B0017D7E3 /* UIView+Extensions.swift */,
+				7BC48275243FA02A005831E0 /* UITableView+Extensions.swift */,
+				7BC4827E243FA449005831E0 /* DateFormater+Extensions.swift */,
+				7BC48280243FA523005831E0 /* Date+String.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		7B3F58D7242F3F67001E9393 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +162,8 @@
 		7B3F58DA242F4085001E9393 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				7BC48277243FA039005831E0 /* Protocols */,
+				7B08780E24387CF90017D7E3 /* Extensions */,
 				7B3F58DB242F408E001E9393 /* Strings.swift */,
 			);
 			path = Utils;
@@ -91,6 +172,8 @@
 		7B5F7024242F4CF800CB31EF /* WeatherList */ = {
 			isa = PBXGroup;
 			children = (
+				7BC4827B243FA228005831E0 /* Model */,
+				7BC48278243FA0AC005831E0 /* CellModels */,
 				7B5F702D242F50CC00CB31EF /* Cells */,
 				7B5F7025242F4D1E00CB31EF /* WeatherListPresenter.swift */,
 				7B5F7026242F4D1E00CB31EF /* WeatherListRouter.swift */,
@@ -106,6 +189,7 @@
 				7B5F702E242F514D00CB31EF /* WeatherListCell.swift */,
 				7B5F702F242F514D00CB31EF /* WeatherListCell.xib */,
 				7B690381243665CC00F90F5A /* WeatherListCodeCell.swift */,
+				7B0877FB243878580017D7E3 /* WeatherListHeaderCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -152,6 +236,7 @@
 		7BB28A76241D39CA008165BE /* Swift-Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				7B0877FD243879D80017D7E3 /* Resources */,
 				7B3F58DA242F4085001E9393 /* Utils */,
 				7BB28A77241D39CA008165BE /* AppDelegate.swift */,
 				7BB28A7D241D39CA008165BE /* Main.storyboard */,
@@ -161,6 +246,30 @@
 				7BA4451A242D24B7008492EA /* Modules */,
 			);
 			path = "Swift-Tutorial";
+			sourceTree = "<group>";
+		};
+		7BC48277243FA039005831E0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7BC48273243F9EDC005831E0 /* PTableViewCellModel.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7BC48278243FA0AC005831E0 /* CellModels */ = {
+			isa = PBXGroup;
+			children = (
+				7BC48279243FA0D1005831E0 /* WeatherListHeaderCellModel.swift */,
+			);
+			path = CellModels;
+			sourceTree = "<group>";
+		};
+		7BC4827B243FA228005831E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7BC4827C243FA23A005831E0 /* Weather.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		80F50676B3230A55F5CD4EA3 /* Pods */ = {
@@ -184,6 +293,7 @@
 				7BB28A70241D39CA008165BE /* Sources */,
 				7BB28A71241D39CA008165BE /* Frameworks */,
 				7BB28A72241D39CA008165BE /* Resources */,
+				4D1D2E658EF54EC14680B847 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,7 +344,12 @@
 			files = (
 				7B5F7031242F514D00CB31EF /* WeatherListCell.xib in Resources */,
 				7BB28A84241D39CD008165BE /* LaunchScreen.storyboard in Resources */,
+				7B08780924387A1F0017D7E3 /* Comfortaa-SemiBold.ttf in Resources */,
+				7B08780724387A1F0017D7E3 /* Comfortaa-Medium.ttf in Resources */,
+				7B08780524387A1F0017D7E3 /* Comfortaa-Bold.ttf in Resources */,
+				7B08780824387A1F0017D7E3 /* Comfortaa-Regular.ttf in Resources */,
 				7BB28A81241D39CD008165BE /* Assets.xcassets in Resources */,
+				7B08780624387A1F0017D7E3 /* Comfortaa-Light.ttf in Resources */,
 				7BB28A7F241D39CA008165BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +379,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4D1D2E658EF54EC14680B847 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swift-Tutorial/Pods-Swift-Tutorial-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swift-Tutorial/Pods-Swift-Tutorial-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Swift-Tutorial/Pods-Swift-Tutorial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7B3D39962426027200975C53 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -289,18 +421,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC48274243F9EDC005831E0 /* PTableViewCellModel.swift in Sources */,
 				7B5F7030242F514D00CB31EF /* WeatherListCell.swift in Sources */,
+				7B08780B24387ACC0017D7E3 /* Fonts.swift in Sources */,
 				7B690382243665CC00F90F5A /* WeatherListCodeCell.swift in Sources */,
 				7BB28A7C241D39CA008165BE /* StartupViewController.swift in Sources */,
 				7B3F58DC242F408E001E9393 /* Strings.swift in Sources */,
 				7BB28A78241D39CA008165BE /* AppDelegate.swift in Sources */,
+				7B08781124387D0B0017D7E3 /* UIView+Extensions.swift in Sources */,
+				7B0877FC243878580017D7E3 /* WeatherListHeaderCell.swift in Sources */,
 				7B3F58D9242F3FB7001E9393 /* StartupViewModel.swift in Sources */,
 				7B5F702A242F4D1E00CB31EF /* WeatherListRouter.swift in Sources */,
+				7BC48281243FA523005831E0 /* Date+String.swift in Sources */,
+				7B08780D24387B9F0017D7E3 /* Colors.swift in Sources */,
 				7B5F7029242F4D1E00CB31EF /* WeatherListPresenter.swift in Sources */,
+				7BC4827D243FA23A005831E0 /* Weather.swift in Sources */,
 				7B4CD477242D2EEA00D6B765 /* StartupAssembly.swift in Sources */,
 				7B5F702C242F4D1E00CB31EF /* WeatherListAssembly.swift in Sources */,
+				7BC48276243FA02A005831E0 /* UITableView+Extensions.swift in Sources */,
 				7BA44521242D27DC008492EA /* StartupRouter.swift in Sources */,
 				7B5F702B242F4D1E00CB31EF /* WeatherListViewController.swift in Sources */,
+				7BC4827F243FA449005831E0 /* DateFormater+Extensions.swift in Sources */,
+				7BC4827A243FA0D1005831E0 /* WeatherListHeaderCellModel.swift in Sources */,
 				7BA4451D242D24F1008492EA /* StartupPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
