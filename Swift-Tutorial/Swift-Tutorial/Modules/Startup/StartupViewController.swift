@@ -28,7 +28,11 @@ class StartupViewController: UIViewController {
     }
 
     private func setupViews() {
-        
+        DispatchQueue(label: "number1").async {
+            for _ in 0...99 {
+                print("go")
+            }
+        }
     }
 
     @IBAction private func didTapWeatherListButton(_ sender: UIButton) {

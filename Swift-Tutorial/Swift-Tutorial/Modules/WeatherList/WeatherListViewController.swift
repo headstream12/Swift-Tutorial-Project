@@ -8,7 +8,7 @@
 
 import UIKit
 
-// swiftlint:disable implicitly_unwrapped_optional
+// swiftlint:disable implicitly_unwrapped_optional prohibited_super_call
 
 class WeatherListViewController: UIViewController {
 
@@ -20,6 +20,19 @@ class WeatherListViewController: UIViewController {
         }
     }
     var presenter: WeatherListPresenter!
+
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+
+    override func loadView() {
+        super.loadView()
+        print(2)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

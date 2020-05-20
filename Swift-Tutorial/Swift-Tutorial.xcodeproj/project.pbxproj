@@ -27,6 +27,8 @@
 		7B5F7030242F514D00CB31EF /* WeatherListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5F702E242F514D00CB31EF /* WeatherListCell.swift */; };
 		7B5F7031242F514D00CB31EF /* WeatherListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B5F702F242F514D00CB31EF /* WeatherListCell.xib */; };
 		7B690382243665CC00F90F5A /* WeatherListCodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B690381243665CC00F90F5A /* WeatherListCodeCell.swift */; };
+		7BA0458824757F6E00AE111F /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA0458724757F6E00AE111F /* NetworkProvider.swift */; };
+		7BA0458A2475841100AE111F /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA045892475841100AE111F /* NetworkError.swift */; };
 		7BA4451D242D24F1008492EA /* StartupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA4451C242D24F1008492EA /* StartupPresenter.swift */; };
 		7BA44521242D27DC008492EA /* StartupRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA44520242D27DC008492EA /* StartupRouter.swift */; };
 		7BB28A78241D39CA008165BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB28A77241D39CA008165BE /* AppDelegate.swift */; };
@@ -62,6 +64,8 @@
 		7B5F702E242F514D00CB31EF /* WeatherListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListCell.swift; sourceTree = "<group>"; };
 		7B5F702F242F514D00CB31EF /* WeatherListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherListCell.xib; sourceTree = "<group>"; };
 		7B690381243665CC00F90F5A /* WeatherListCodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListCodeCell.swift; sourceTree = "<group>"; };
+		7BA0458724757F6E00AE111F /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		7BA045892475841100AE111F /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		7BA4451C242D24F1008492EA /* StartupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupPresenter.swift; sourceTree = "<group>"; };
 		7BA44520242D27DC008492EA /* StartupRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupRouter.swift; sourceTree = "<group>"; };
 		7BB28A74241D39CA008165BE /* Swift-Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +166,7 @@
 		7B3F58DA242F4085001E9393 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				7BA0458624757F0600AE111F /* Network */,
 				7BC48277243FA039005831E0 /* Protocols */,
 				7B08780E24387CF90017D7E3 /* Extensions */,
 				7B3F58DB242F408E001E9393 /* Strings.swift */,
@@ -192,6 +197,15 @@
 				7B0877FB243878580017D7E3 /* WeatherListHeaderCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		7BA0458624757F0600AE111F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7BA0458724757F6E00AE111F /* NetworkProvider.swift */,
+				7BA045892475841100AE111F /* NetworkError.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		7BA44519242D24AB008492EA /* Startup */ = {
@@ -426,6 +440,7 @@
 				7B08780B24387ACC0017D7E3 /* Fonts.swift in Sources */,
 				7B690382243665CC00F90F5A /* WeatherListCodeCell.swift in Sources */,
 				7BB28A7C241D39CA008165BE /* StartupViewController.swift in Sources */,
+				7BA0458824757F6E00AE111F /* NetworkProvider.swift in Sources */,
 				7B3F58DC242F408E001E9393 /* Strings.swift in Sources */,
 				7BB28A78241D39CA008165BE /* AppDelegate.swift in Sources */,
 				7B08781124387D0B0017D7E3 /* UIView+Extensions.swift in Sources */,
@@ -439,6 +454,7 @@
 				7B4CD477242D2EEA00D6B765 /* StartupAssembly.swift in Sources */,
 				7B5F702C242F4D1E00CB31EF /* WeatherListAssembly.swift in Sources */,
 				7BC48276243FA02A005831E0 /* UITableView+Extensions.swift in Sources */,
+				7BA0458A2475841100AE111F /* NetworkError.swift in Sources */,
 				7BA44521242D27DC008492EA /* StartupRouter.swift in Sources */,
 				7B5F702B242F4D1E00CB31EF /* WeatherListViewController.swift in Sources */,
 				7BC4827F243FA449005831E0 /* DateFormater+Extensions.swift in Sources */,

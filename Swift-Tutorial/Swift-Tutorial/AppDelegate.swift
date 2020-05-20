@@ -22,21 +22,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
 
+        print("MAN: didFinishLaunchingWithOptions")
         return true
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
+        print("MAN: applicationWillEnterForeground")
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
+        print("MAN: applicationDidBecomeActive")
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
+        print("MAN: applicationWillResignActive")
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
+        print("MAN: applicationDidEnterBackground")
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
+        print("MAN: applicationWillTerminate")
     }
 }
