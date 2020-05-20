@@ -29,6 +29,7 @@
 		7B690382243665CC00F90F5A /* WeatherListCodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B690381243665CC00F90F5A /* WeatherListCodeCell.swift */; };
 		7BA0458824757F6E00AE111F /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA0458724757F6E00AE111F /* NetworkProvider.swift */; };
 		7BA0458A2475841100AE111F /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA045892475841100AE111F /* NetworkError.swift */; };
+		7BA0458C247591B700AE111F /* NetworkRequestPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA0458B247591B700AE111F /* NetworkRequestPrototype.swift */; };
 		7BA4451D242D24F1008492EA /* StartupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA4451C242D24F1008492EA /* StartupPresenter.swift */; };
 		7BA44521242D27DC008492EA /* StartupRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA44520242D27DC008492EA /* StartupRouter.swift */; };
 		7BB28A78241D39CA008165BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB28A77241D39CA008165BE /* AppDelegate.swift */; };
@@ -66,6 +67,7 @@
 		7B690381243665CC00F90F5A /* WeatherListCodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListCodeCell.swift; sourceTree = "<group>"; };
 		7BA0458724757F6E00AE111F /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		7BA045892475841100AE111F /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		7BA0458B247591B700AE111F /* NetworkRequestPrototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestPrototype.swift; sourceTree = "<group>"; };
 		7BA4451C242D24F1008492EA /* StartupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupPresenter.swift; sourceTree = "<group>"; };
 		7BA44520242D27DC008492EA /* StartupRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupRouter.swift; sourceTree = "<group>"; };
 		7BB28A74241D39CA008165BE /* Swift-Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +206,7 @@
 			children = (
 				7BA0458724757F6E00AE111F /* NetworkProvider.swift */,
 				7BA045892475841100AE111F /* NetworkError.swift */,
+				7BA0458B247591B700AE111F /* NetworkRequestPrototype.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 				7B08781124387D0B0017D7E3 /* UIView+Extensions.swift in Sources */,
 				7B0877FC243878580017D7E3 /* WeatherListHeaderCell.swift in Sources */,
 				7B3F58D9242F3FB7001E9393 /* StartupViewModel.swift in Sources */,
+				7BA0458C247591B700AE111F /* NetworkRequestPrototype.swift in Sources */,
 				7B5F702A242F4D1E00CB31EF /* WeatherListRouter.swift in Sources */,
 				7BC48281243FA523005831E0 /* Date+String.swift in Sources */,
 				7B08780D24387B9F0017D7E3 /* Colors.swift in Sources */,

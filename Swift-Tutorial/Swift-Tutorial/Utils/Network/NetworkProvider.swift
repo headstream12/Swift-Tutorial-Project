@@ -15,7 +15,8 @@ struct NetworkResult {
 
 class NetworkProvider {
     private let session: URLSession
-
+/// --  Программу в playground, в которой представлен класс  SumClass,  работающий с универсальным типом. У него будет func sum(Element, Element) -> Element
+/// - Создаете несколько методов, внутри разные параметры, среди которых, escaping и nonescaping closures, и должны показать различие. Показать понимане capture list. 
     init(session: URLSession) {
         let configuration = URLSessionConfiguration()
         configuration.timeoutIntervalForRequest = 20
@@ -23,6 +24,7 @@ class NetworkProvider {
         self.session = URLSession(configuration: configuration)
     }
 
+    //swiftlint:disable closure_body_length
     func performRequest(
         _ request: URLRequest,
         resultQueue: DispatchQueue,
