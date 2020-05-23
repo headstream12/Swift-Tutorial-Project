@@ -23,7 +23,7 @@ struct NetworkRequestPrototype {
     let method: Method
     let baseURL: URL
     let path: String
-    let headers: [String: String]
+    var headers: [String: String]
     let queryParams: [String: [String]]
     let bodyData: Data?
 

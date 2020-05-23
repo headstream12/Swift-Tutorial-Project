@@ -13,10 +13,9 @@ struct NetworkResult {
     let response: HTTPURLResponse
 }
 
-class NetworkProvider {
+class NetworkProvider: Network {
     private let session: URLSession
-/// --  Программу в playground, в которой представлен класс  SumClass,  работающий с универсальным типом. У него будет func sum(Element, Element) -> Element
-/// - Создаете несколько методов, внутри разные параметры, среди которых, escaping и nonescaping closures, и должны показать различие. Показать понимане capture list. 
+
     init(session: URLSession) {
         let configuration = URLSessionConfiguration()
         configuration.timeoutIntervalForRequest = 20
