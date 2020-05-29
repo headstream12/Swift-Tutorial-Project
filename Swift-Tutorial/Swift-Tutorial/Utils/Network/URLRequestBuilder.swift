@@ -61,8 +61,8 @@ class URLRequestBuilder: URLRequestBuilderProtocol {
         var prototype = prototype
         let headersFromHeaderProvider = headerProvider.createHeaders(for: prototype)
 
-        prototype.headers = prototype.headers.merging(headersFromHeaderProvider) { (current, _) -> String in
-            return current
+        prototype.headers = prototype.headers.merging(headersFromHeaderProvider) { current, _ -> String in
+            current
         }
 
         return prebuildRequest(for: prototype) as URLRequest

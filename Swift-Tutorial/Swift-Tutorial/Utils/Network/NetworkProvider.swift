@@ -15,12 +15,12 @@ struct NetworkResult {
 
 class NetworkProvider: Network {
     private let session: URLSession
+    
+    init() {
+        //let configuration = URLSessionConfiguration()
+        //configuration.timeoutIntervalForRequest = 20
 
-    init(session: URLSession) {
-        let configuration = URLSessionConfiguration()
-        configuration.timeoutIntervalForRequest = 20
-
-        self.session = URLSession(configuration: configuration)
+        self.session = URLSession.shared
     }
 
     //swiftlint:disable closure_body_length
@@ -58,6 +58,7 @@ class NetworkProvider: Network {
             resultQueue.async {
                 switch httpResponse.statusCode {
                 case 200..<300:
+                    print(data.prettyPrintedJSONString)
                     completion(.success(NetworkResult(data: data, response: httpResponse)))
                 default:
                     completion(.failure(.httpFailure(httpResponse.statusCode)))
@@ -66,5 +67,15 @@ class NetworkProvider: Network {
         })
 
         task.resume()
+    }
+}
+
+extension Data {
+    var prettyPrintedJSONString: NSString? { // NSString gives us a nice sanitized debugDescription
+        guard let object = try? JSONSerialization.jsonObject(with: self, options: []),
+              let data = try? JSONSerialization.data(withJSONObject: object, options: [.prettyPrinted]),
+              let prettyPrintedString = NSString(data: data, encoding: String.Encoding.utf8.rawValue) else { return nil }
+
+        return prettyPrintedString
     }
 }

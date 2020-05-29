@@ -41,6 +41,9 @@
 		7BB28A7F241D39CA008165BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB28A7D241D39CA008165BE /* Main.storyboard */; };
 		7BB28A81241D39CD008165BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BB28A80241D39CD008165BE /* Assets.xcassets */; };
 		7BB28A84241D39CD008165BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB28A82241D39CD008165BE /* LaunchScreen.storyboard */; };
+		7BBFB8852480128100B825AA /* CovidAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBFB8842480128100B825AA /* CovidAPI.swift */; };
+		7BBFB88824801C1D00B825AA /* BaseResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBFB88724801C1D00B825AA /* BaseResponseDTO.swift */; };
+		7BBFB88A24801C3300B825AA /* CovidStatisticDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBFB88924801C3300B825AA /* CovidStatisticDTO.swift */; };
 		7BC48274243F9EDC005831E0 /* PTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC48273243F9EDC005831E0 /* PTableViewCellModel.swift */; };
 		7BC48276243FA02A005831E0 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC48275243FA02A005831E0 /* UITableView+Extensions.swift */; };
 		7BC4827A243FA0D1005831E0 /* WeatherListHeaderCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC48279243FA0D1005831E0 /* WeatherListHeaderCellModel.swift */; };
@@ -85,6 +88,9 @@
 		7BB28A80241D39CD008165BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BB28A83241D39CD008165BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BB28A85241D39CD008165BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BBFB8842480128100B825AA /* CovidAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidAPI.swift; sourceTree = "<group>"; };
+		7BBFB88724801C1D00B825AA /* BaseResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseDTO.swift; sourceTree = "<group>"; };
+		7BBFB88924801C3300B825AA /* CovidStatisticDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidStatisticDTO.swift; sourceTree = "<group>"; };
 		7BC48273243F9EDC005831E0 /* PTableViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTableViewCellModel.swift; sourceTree = "<group>"; };
 		7BC48275243FA02A005831E0 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		7BC48279243FA0D1005831E0 /* WeatherListHeaderCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListHeaderCellModel.swift; sourceTree = "<group>"; };
@@ -212,6 +218,8 @@
 		7BA0458624757F0600AE111F /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				7BBFB88624801C1400B825AA /* DTO */,
+				7BBFB8832480127300B825AA /* API */,
 				7BA0458724757F6E00AE111F /* NetworkProvider.swift */,
 				7B1215C024791BC600BA55D9 /* Network.swift */,
 				7BA045892475841100AE111F /* NetworkError.swift */,
@@ -275,6 +283,23 @@
 				7BA4451A242D24B7008492EA /* Modules */,
 			);
 			path = "Swift-Tutorial";
+			sourceTree = "<group>";
+		};
+		7BBFB8832480127300B825AA /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7BBFB8842480128100B825AA /* CovidAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		7BBFB88624801C1400B825AA /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				7BBFB88724801C1D00B825AA /* BaseResponseDTO.swift */,
+				7BBFB88924801C3300B825AA /* CovidStatisticDTO.swift */,
+			);
+			path = DTO;
 			sourceTree = "<group>";
 		};
 		7BC48277243FA039005831E0 /* Protocols */ = {
@@ -451,6 +476,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BC48274243F9EDC005831E0 /* PTableViewCellModel.swift in Sources */,
+				7BBFB88824801C1D00B825AA /* BaseResponseDTO.swift in Sources */,
+				7BBFB8852480128100B825AA /* CovidAPI.swift in Sources */,
 				7B5F7030242F514D00CB31EF /* WeatherListCell.swift in Sources */,
 				7B1215BD24790AFE00BA55D9 /* URLRequestBuilder.swift in Sources */,
 				7B1215C124791BC600BA55D9 /* Network.swift in Sources */,
@@ -472,6 +499,7 @@
 				7BC4827D243FA23A005831E0 /* Weather.swift in Sources */,
 				7B4CD477242D2EEA00D6B765 /* StartupAssembly.swift in Sources */,
 				7B5F702C242F4D1E00CB31EF /* WeatherListAssembly.swift in Sources */,
+				7BBFB88A24801C3300B825AA /* CovidStatisticDTO.swift in Sources */,
 				7BC48276243FA02A005831E0 /* UITableView+Extensions.swift in Sources */,
 				7BA0458A2475841100AE111F /* NetworkError.swift in Sources */,
 				7BA44521242D27DC008492EA /* StartupRouter.swift in Sources */,

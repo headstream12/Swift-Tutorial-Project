@@ -11,13 +11,16 @@ import Foundation
 class StartupPresenter {
     private weak var view: StartupViewController?
     private let router: StartupRouter
+    private let covidAPI: CovidAPIProtocol
 
     init(
         view: StartupViewController,
-        router: StartupRouter
+        router: StartupRouter,
+        covidAPI: CovidAPIProtocol
     ) {
         self.view = view
         self.router = router
+        self.covidAPI = covidAPI
     }
 
     func viewDidLoad() {
@@ -32,6 +35,21 @@ class StartupPresenter {
     }
 
     func didTapWeatherListButton() {
-        router.showWeatherList()
+        covidAPI.loadStatistic(by: "Russia") { [weak self] result in
+            switch result {
+            case .success(let responseDTO):
+                let covidViewModel = StartupViewModel(
+                    title: "Всего случаев: \(responseDTO.data.covidStats.first?.confirmed ?? 0)",
+                    description: "Вылечилось: \(responseDTO.data.covidStats.first?.recovered ?? 0)",
+                    firstButtonTitle: Strings.Startup.firstButtonTitle,
+                    secondButtonTitle: Strings.Startup.secondButtonTitle
+                )
+
+                self?.view?.bindData(with: covidViewModel)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+        //router.showWeatherList()
     }
 }

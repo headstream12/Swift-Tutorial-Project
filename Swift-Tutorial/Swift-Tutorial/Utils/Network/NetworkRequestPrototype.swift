@@ -18,6 +18,7 @@ struct NetworkRequestPrototype {
 
     enum APIEndpoint {
         case backend
+        case covid19
     }
 
     let method: Method
@@ -44,6 +45,8 @@ struct NetworkRequestPrototype {
         switch endpoint {
         case .backend:
             self.baseURL = BaseURL.backendURL
+        case .covid19:
+            self.baseURL = BaseURL.covidURL
         }
     }
 }
@@ -52,5 +55,6 @@ struct NetworkRequestPrototype {
 private extension NetworkRequestPrototype {
     enum BaseURL {
         static let backendURL = URL(string: "https://yandex.ru")!
+        static let covidURL = URL(string: "https://covid-19-coronavirus-statistics.p.rapidapi.com")!
     }
 }

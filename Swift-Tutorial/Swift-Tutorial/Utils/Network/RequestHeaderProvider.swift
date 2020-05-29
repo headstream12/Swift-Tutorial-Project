@@ -15,11 +15,20 @@ protocol RequestHeaderProvider {
 class JsonContentTypeHeaderProvider: RequestHeaderProvider {
     private let allowedMethods: Set<NetworkRequestPrototype.Method> = [.post, .put]
 
-    func createHeaders(for requestPrototype: NetworkRequestPrototype) -> [String : String] {
+    func createHeaders(for requestPrototype: NetworkRequestPrototype) -> [String: String] {
         guard allowedMethods.contains(requestPrototype.method) else {
             return [:]
         }
 
         return ["Content-Type": "application/json"]
+    }
+}
+
+class CovidHeaderProvider: RequestHeaderProvider {
+    func createHeaders(for requestPrototype: NetworkRequestPrototype) -> [String: String] {
+        [
+            "x-rapidapi-host": "covid-19-coronavirus-statistics.p.rapidapi.com",
+            "x-rapidapi-key": "4572b611d9msh7a5cc67c4e55bddp1a46cajsnd1df643c6cee"
+        ]
     }
 }

@@ -19,7 +19,11 @@ class StartupAssembly {
 
         let navigationController = UINavigationController(rootViewController: viewController)
         let router = StartupRouter(navigationController: navigationController)
-        let presenter = StartupPresenter(view: viewController, router: router)
+        let presenter = StartupPresenter(
+            view: viewController,
+            router: router,
+            covidAPI: CovidAPI(network: NetworkProvider())
+        )
         viewController.presenter = presenter
 
         return navigationController

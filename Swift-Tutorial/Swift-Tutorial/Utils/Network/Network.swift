@@ -16,6 +16,7 @@ protocol Network {
     )
 }
 
+// swiftlint:disable untyped_error_in_catch
 extension Network {
     func performRequest<TargetDecodable: Decodable>(
         _ prototype: NetworkRequestPrototype,
@@ -40,5 +41,3 @@ extension Network {
         }
     }
 }
-
-
