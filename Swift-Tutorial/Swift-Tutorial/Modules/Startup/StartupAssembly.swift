@@ -22,7 +22,7 @@ class StartupAssembly {
         let presenter = StartupPresenter(
             view: viewController,
             router: router,
-            covidAPI: CovidAPI(network: NetworkProvider())
+            weatherAPI: WearherAPI(network: NetworkProvider())
         )
         viewController.presenter = presenter
 

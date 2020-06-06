@@ -7,5 +7,7 @@ target 'Swift-Tutorial' do
 
   pod 'SwiftLint'
   pod 'SnapKit'
+  pod 'Mapbox-iOS-SDK', '~> 5.9'
+  pod 'SwiftDate'
 
 end

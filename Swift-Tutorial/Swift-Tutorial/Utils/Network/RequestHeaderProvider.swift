@@ -12,6 +12,12 @@ protocol RequestHeaderProvider {
     func createHeaders(for requestPrototype: NetworkRequestPrototype) -> [String: String]
 }
 
+class EmptyHeaderProvider: RequestHeaderProvider {
+    func createHeaders(for requestPrototype: NetworkRequestPrototype) -> [String : String] {
+        [:]
+    }
+}
+
 class JsonContentTypeHeaderProvider: RequestHeaderProvider {
     private let allowedMethods: Set<NetworkRequestPrototype.Method> = [.post, .put]
 

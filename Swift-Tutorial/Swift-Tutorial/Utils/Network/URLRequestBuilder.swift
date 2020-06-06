@@ -53,7 +53,7 @@ extension URLRequestBuilderProtocol {
 class URLRequestBuilder: URLRequestBuilderProtocol {
     let headerProvider: RequestHeaderProvider
 
-    init(headerProvider: RequestHeaderProvider = JsonContentTypeHeaderProvider()) {
+    init(headerProvider: RequestHeaderProvider = EmptyHeaderProvider()) {
         self.headerProvider = headerProvider
     }
 

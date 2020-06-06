@@ -2,14 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIAppFonts</key>
-	<array>
-		<string>Comfortaa-Bold.ttf</string>
-		<string>Comfortaa-Light.ttf</string>
-		<string>Comfortaa-Medium.ttf</string>
-		<string>Comfortaa-Regular.ttf</string>
-		<string>Comfortaa-SemiBold.ttf</string>
-	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -28,6 +20,18 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1IjoiaGVhZHN0cmVhbTEiLCJhIjoiY2thdXFlZTE0MDQ4cTJ4cGNpN3F3a3dnYSJ9.VY8XaZTqZuowRQVnOpQn-g</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Разрешите доступ к геоданным для отображения вашего местоположения</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Comfortaa-Bold.ttf</string>
+		<string>Comfortaa-Light.ttf</string>
+		<string>Comfortaa-Medium.ttf</string>
+		<string>Comfortaa-Regular.ttf</string>
+		<string>Comfortaa-SemiBold.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>

@@ -33,6 +33,7 @@ extension Network {
                     let responseTarget = try JSONDecoder().decode(TargetDecodable.self, from: networkResult.data)
                     completion(.success(responseTarget))
                 } catch let error {
+                    print(error.localizedDescription)
                     completion(.failure(.invalidResponse(error)))
                 }
             case .failure(let error):

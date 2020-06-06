@@ -46,4 +46,5 @@ class CovidAPI: CovidAPIProtocol {
             completion: completion
         )
     }
+    
 }
