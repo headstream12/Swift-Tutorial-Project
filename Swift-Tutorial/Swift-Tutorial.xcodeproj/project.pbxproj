@@ -9,45 +9,73 @@
 /* Begin PBXBuildFile section */
 		561196050358E50290A7D50D /* Pods_Swift_Tutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8064240C6C2AB0D6ACCC27C /* Pods_Swift_Tutorial.framework */; };
 		7BB28A78241D39CA008165BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB28A77241D39CA008165BE /* AppDelegate.swift */; };
-		7BB28A7A241D39CA008165BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB28A79241D39CA008165BE /* SceneDelegate.swift */; };
-		7BB28A7C241D39CA008165BE /* StartUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB28A7B241D39CA008165BE /* StartUpViewController.swift */; };
-		7BB28A7F241D39CA008165BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB28A7D241D39CA008165BE /* Main.storyboard */; };
+		7BB28A7C241D39CA008165BE /* CovidStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB28A7B241D39CA008165BE /* CovidStatsViewController.swift */; };
 		7BB28A81241D39CD008165BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BB28A80241D39CD008165BE /* Assets.xcassets */; };
 		7BB28A84241D39CD008165BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB28A82241D39CD008165BE /* LaunchScreen.storyboard */; };
+		CE1428B024C8082100E21799 /* NetworkRequestPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1428AF24C8082100E21799 /* NetworkRequestPrototype.swift */; };
+		CE1428B224C835C400E21799 /* RequestHeaderProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1428B124C835C400E21799 /* RequestHeaderProvider.swift */; };
+		CE1428B424C83AE800E21799 /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1428B324C83AE800E21799 /* URLRequestBuilder.swift */; };
+		CE34BDE8247581D800776FAD /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34BDE7247581D800776FAD /* NetworkProvider.swift */; };
+		CE34BDEA2475843A00776FAD /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34BDE92475843A00776FAD /* NetworkError.swift */; };
+		CE3C173A245F1A840042C342 /* ImageCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3C1739245F1A840042C342 /* ImageCellModel.swift */; };
+		CE3C173C245F1C3E0042C342 /* UITableView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3C173B245F1C3E0042C342 /* UITableView + Extensions.swift */; };
+		CE3C173E245F1CEE0042C342 /* PTableViewCellModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3C173D245F1CEE0042C342 /* PTableViewCellModels.swift */; };
+		CE3C1740245F1D770042C342 /* UIView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3C173F245F1D770042C342 /* UIView + Extensions.swift */; };
 		CE68C4F42444FE8B00EF4616 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68C4F22444FE8B00EF4616 /* ImageCell.swift */; };
-		CE68C4F52444FE8B00EF4616 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE68C4F32444FE8B00EF4616 /* ImageCell.xib */; };
 		CE68C4F8244505E600EF4616 /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68C4F6244505E600EF4616 /* DateCell.swift */; };
-		CE68C4F9244505E600EF4616 /* DateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE68C4F7244505E600EF4616 /* DateCell.xib */; };
 		CE68C4FC2445071E00EF4616 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68C4FA2445071E00EF4616 /* TextCell.swift */; };
-		CE68C4FD2445071E00EF4616 /* TextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE68C4FB2445071E00EF4616 /* TextCell.xib */; };
 		CE68C5002446004F00EF4616 /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68C4FE2446004F00EF4616 /* ResultCell.swift */; };
-		CE68C5012446004F00EF4616 /* ResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE68C4FF2446004F00EF4616 /* ResultCell.xib */; };
-		CE68C5052452E91500EF4616 /* StartUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68C5042452E91500EF4616 /* StartUpPresenter.swift */; };
-		CE68C5072452EED700EF4616 /* StartUpAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68C5062452EED700EF4616 /* StartUpAssembly.swift */; };
+		CE68C5052452E91500EF4616 /* CovidStatsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68C5042452E91500EF4616 /* CovidStatsPresenter.swift */; };
+		CE68C5072452EED700EF4616 /* CovidStatsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68C5062452EED700EF4616 /* CovidStatsAssembly.swift */; };
+		CE68C50B2452FEBF00EF4616 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68C50A2452FEBF00EF4616 /* Strings.swift */; };
+		CE8348E324D985EA00A6D15A /* CovidAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8348E224D985EA00A6D15A /* CovidAPI.swift */; };
+		CE8348E524D98AD000A6D15A /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8348E424D98AD000A6D15A /* Network.swift */; };
+		CE8348EA24D9B9EB00A6D15A /* BaseResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8348E924D9B9EB00A6D15A /* BaseResponseDTO.swift */; };
+		CE8348EC24D9BA2500A6D15A /* CovidStatisticDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8348EB24D9BA2500A6D15A /* CovidStatisticDTO.swift */; };
+		CE98D5BD2458CF8D00B51E48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB28A7D241D39CA008165BE /* Main.storyboard */; };
+		CEE8820824C0A20D0035D03B /* DateCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8820724C0A20D0035D03B /* DateCellModel.swift */; };
+		CEE8820A24C0B1D50035D03B /* DateFormatter + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8820924C0B1D50035D03B /* DateFormatter + Extensions.swift */; };
+		CEE8820C24C0B2B80035D03B /* Date + Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8820B24C0B2B80035D03B /* Date + Strings.swift */; };
+		CEE8820E24C0B9DA0035D03B /* TextCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8820D24C0B9DA0035D03B /* TextCellModel.swift */; };
+		CEE8821024C0BC040035D03B /* ResultCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8820F24C0BC040035D03B /* ResultCellModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		099F205ECAC642FB04662B9E /* Pods-Swift-Tutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-Tutorial.debug.xcconfig"; path = "Target Support Files/Pods-Swift-Tutorial/Pods-Swift-Tutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		7BB28A74241D39CA008165BE /* Swift-Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB28A77241D39CA008165BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7BB28A79241D39CA008165BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7BB28A7B241D39CA008165BE /* StartUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpViewController.swift; sourceTree = "<group>"; };
+		7BB28A7B241D39CA008165BE /* CovidStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidStatsViewController.swift; sourceTree = "<group>"; };
 		7BB28A7E241D39CA008165BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BB28A80241D39CD008165BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BB28A83241D39CD008165BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BB28A85241D39CD008165BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C17C30086AD9EA82336135B /* Pods-Swift-Tutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-Tutorial.release.xcconfig"; path = "Target Support Files/Pods-Swift-Tutorial/Pods-Swift-Tutorial.release.xcconfig"; sourceTree = "<group>"; };
 		A8064240C6C2AB0D6ACCC27C /* Pods_Swift_Tutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_Tutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1428AF24C8082100E21799 /* NetworkRequestPrototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestPrototype.swift; sourceTree = "<group>"; };
+		CE1428B124C835C400E21799 /* RequestHeaderProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHeaderProvider.swift; sourceTree = "<group>"; };
+		CE1428B324C83AE800E21799 /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
+		CE34BDE7247581D800776FAD /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		CE34BDE92475843A00776FAD /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		CE3C1739245F1A840042C342 /* ImageCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCellModel.swift; sourceTree = "<group>"; };
+		CE3C173B245F1C3E0042C342 /* UITableView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView + Extensions.swift"; sourceTree = "<group>"; };
+		CE3C173D245F1CEE0042C342 /* PTableViewCellModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTableViewCellModels.swift; sourceTree = "<group>"; };
+		CE3C173F245F1D770042C342 /* UIView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extensions.swift"; sourceTree = "<group>"; };
 		CE68C4F22444FE8B00EF4616 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
-		CE68C4F32444FE8B00EF4616 /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
 		CE68C4F6244505E600EF4616 /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
-		CE68C4F7244505E600EF4616 /* DateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateCell.xib; sourceTree = "<group>"; };
 		CE68C4FA2445071E00EF4616 /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
-		CE68C4FB2445071E00EF4616 /* TextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextCell.xib; sourceTree = "<group>"; };
 		CE68C4FE2446004F00EF4616 /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
-		CE68C4FF2446004F00EF4616 /* ResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultCell.xib; sourceTree = "<group>"; };
-		CE68C5042452E91500EF4616 /* StartUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpPresenter.swift; sourceTree = "<group>"; };
-		CE68C5062452EED700EF4616 /* StartUpAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpAssembly.swift; sourceTree = "<group>"; };
+		CE68C5042452E91500EF4616 /* CovidStatsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidStatsPresenter.swift; sourceTree = "<group>"; };
+		CE68C5062452EED700EF4616 /* CovidStatsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidStatsAssembly.swift; sourceTree = "<group>"; };
+		CE68C50A2452FEBF00EF4616 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		CE8348E224D985EA00A6D15A /* CovidAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidAPI.swift; sourceTree = "<group>"; };
+		CE8348E424D98AD000A6D15A /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		CE8348E924D9B9EB00A6D15A /* BaseResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseDTO.swift; sourceTree = "<group>"; };
+		CE8348EB24D9BA2500A6D15A /* CovidStatisticDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidStatisticDTO.swift; sourceTree = "<group>"; };
+		CEE8820724C0A20D0035D03B /* DateCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCellModel.swift; sourceTree = "<group>"; };
+		CEE8820924C0B1D50035D03B /* DateFormatter + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter + Extensions.swift"; sourceTree = "<group>"; };
+		CEE8820B24C0B2B80035D03B /* Date + Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Strings.swift"; sourceTree = "<group>"; };
+		CEE8820D24C0B9DA0035D03B /* TextCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCellModel.swift; sourceTree = "<group>"; };
+		CEE8820F24C0BC040035D03B /* ResultCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCellModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +111,9 @@
 		7BB28A76241D39CA008165BE /* Swift-Tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				CE68C5022452E89D00EF4616 /* modules */,
+				CE68C5082452FE8A00EF4616 /* Utils */,
+				CE68C5022452E89D00EF4616 /* Modules */,
 				7BB28A77241D39CA008165BE /* AppDelegate.swift */,
-				7BB28A79241D39CA008165BE /* SceneDelegate.swift */,
 				7BB28A7D241D39CA008165BE /* Main.storyboard */,
 				7BB28A80241D39CD008165BE /* Assets.xcassets */,
 				7BB28A82241D39CD008165BE /* LaunchScreen.storyboard */,
@@ -112,37 +140,131 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CE34BDE62475818000776FAD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CE8348E824D9B9CE00A6D15A /* DTO */,
+				CE8348E124D985D500A6D15A /* API */,
+				CE34BDE7247581D800776FAD /* NetworkProvider.swift */,
+				CE34BDE92475843A00776FAD /* NetworkError.swift */,
+				CE1428AF24C8082100E21799 /* NetworkRequestPrototype.swift */,
+				CE1428B124C835C400E21799 /* RequestHeaderProvider.swift */,
+				CE1428B324C83AE800E21799 /* URLRequestBuilder.swift */,
+				CE8348E424D98AD000A6D15A /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CE3C1735245F16750042C342 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CE3C173D245F1CEE0042C342 /* PTableViewCellModels.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CE3C1736245F16A80042C342 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE3C1737245F16C50042C342 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CE3C1737245F16C50042C342 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				CE3C173F245F1D770042C342 /* UIView + Extensions.swift */,
+				CE3C173B245F1C3E0042C342 /* UITableView + Extensions.swift */,
+				CEE8820924C0B1D50035D03B /* DateFormatter + Extensions.swift */,
+				CEE8820B24C0B2B80035D03B /* Date + Strings.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		CE3C1738245F1A140042C342 /* CellModels */ = {
+			isa = PBXGroup;
+			children = (
+				CE3C1739245F1A840042C342 /* ImageCellModel.swift */,
+				CEE8820724C0A20D0035D03B /* DateCellModel.swift */,
+				CEE8820D24C0B9DA0035D03B /* TextCellModel.swift */,
+				CEE8820F24C0BC040035D03B /* ResultCellModel.swift */,
+			);
+			path = CellModels;
+			sourceTree = "<group>";
+		};
 		CE68C4ED243E1B3300EF4616 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				CE68C4F22444FE8B00EF4616 /* ImageCell.swift */,
-				CE68C4F32444FE8B00EF4616 /* ImageCell.xib */,
 				CE68C4F6244505E600EF4616 /* DateCell.swift */,
-				CE68C4F7244505E600EF4616 /* DateCell.xib */,
 				CE68C4FA2445071E00EF4616 /* TextCell.swift */,
-				CE68C4FB2445071E00EF4616 /* TextCell.xib */,
 				CE68C4FE2446004F00EF4616 /* ResultCell.swift */,
-				CE68C4FF2446004F00EF4616 /* ResultCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		CE68C5022452E89D00EF4616 /* modules */ = {
+		CE68C5022452E89D00EF4616 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				CE68C5032452E8CB00EF4616 /* startup */,
+				CE68C5032452E8CB00EF4616 /* CovidStats */,
 			);
-			path = modules;
+			path = Modules;
 			sourceTree = "<group>";
 		};
-		CE68C5032452E8CB00EF4616 /* startup */ = {
+		CE68C5032452E8CB00EF4616 /* CovidStats */ = {
 			isa = PBXGroup;
 			children = (
-				7BB28A7B241D39CA008165BE /* StartUpViewController.swift */,
-				CE68C5042452E91500EF4616 /* StartUpPresenter.swift */,
-				CE68C5062452EED700EF4616 /* StartUpAssembly.swift */,
+				CE3C1738245F1A140042C342 /* CellModels */,
+				CE68C50C2452FF7700EF4616 /* ViewModels */,
+				7BB28A7B241D39CA008165BE /* CovidStatsViewController.swift */,
+				CE68C5042452E91500EF4616 /* CovidStatsPresenter.swift */,
+				CE68C5062452EED700EF4616 /* CovidStatsAssembly.swift */,
 			);
-			path = startup;
+			path = CovidStats;
+			sourceTree = "<group>";
+		};
+		CE68C5082452FE8A00EF4616 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CE34BDE62475818000776FAD /* Network */,
+				CE3C1736245F16A80042C342 /* Extensions */,
+				CE3C1735245F16750042C342 /* Protocols */,
+				CE68C5092452FE9300EF4616 /* Strings */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CE68C5092452FE9300EF4616 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				CE68C50A2452FEBF00EF4616 /* Strings.swift */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		CE68C50C2452FF7700EF4616 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CE8348E124D985D500A6D15A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CE8348E224D985EA00A6D15A /* CovidAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CE8348E824D9B9CE00A6D15A /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				CE8348E924D9B9EB00A6D15A /* BaseResponseDTO.swift */,
+				CE8348EB24D9BA2500A6D15A /* CovidStatisticDTO.swift */,
+			);
+			path = DTO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,13 +326,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE68C4FD2445071E00EF4616 /* TextCell.xib in Resources */,
+				CE98D5BD2458CF8D00B51E48 /* Main.storyboard in Resources */,
 				7BB28A84241D39CD008165BE /* LaunchScreen.storyboard in Resources */,
-				CE68C5012446004F00EF4616 /* ResultCell.xib in Resources */,
-				CE68C4F52444FE8B00EF4616 /* ImageCell.xib in Resources */,
 				7BB28A81241D39CD008165BE /* Assets.xcassets in Resources */,
-				7BB28A7F241D39CA008165BE /* Main.storyboard in Resources */,
-				CE68C4F9244505E600EF4616 /* DateCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,15 +364,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BB28A7C241D39CA008165BE /* StartUpViewController.swift in Sources */,
+				CE8348E524D98AD000A6D15A /* Network.swift in Sources */,
+				CE8348E324D985EA00A6D15A /* CovidAPI.swift in Sources */,
+				CEE8820A24C0B1D50035D03B /* DateFormatter + Extensions.swift in Sources */,
+				CE3C1740245F1D770042C342 /* UIView + Extensions.swift in Sources */,
+				CEE8820824C0A20D0035D03B /* DateCellModel.swift in Sources */,
+				CE1428B224C835C400E21799 /* RequestHeaderProvider.swift in Sources */,
+				CE1428B024C8082100E21799 /* NetworkRequestPrototype.swift in Sources */,
+				CE1428B424C83AE800E21799 /* URLRequestBuilder.swift in Sources */,
+				CE34BDEA2475843A00776FAD /* NetworkError.swift in Sources */,
+				CE8348EA24D9B9EB00A6D15A /* BaseResponseDTO.swift in Sources */,
+				CEE8820E24C0B9DA0035D03B /* TextCellModel.swift in Sources */,
+				CE8348EC24D9BA2500A6D15A /* CovidStatisticDTO.swift in Sources */,
+				7BB28A7C241D39CA008165BE /* CovidStatsViewController.swift in Sources */,
 				CE68C4F8244505E600EF4616 /* DateCell.swift in Sources */,
-				CE68C5052452E91500EF4616 /* StartUpPresenter.swift in Sources */,
+				CE68C50B2452FEBF00EF4616 /* Strings.swift in Sources */,
+				CE68C5052452E91500EF4616 /* CovidStatsPresenter.swift in Sources */,
 				CE68C4F42444FE8B00EF4616 /* ImageCell.swift in Sources */,
+				CE3C173C245F1C3E0042C342 /* UITableView + Extensions.swift in Sources */,
 				7BB28A78241D39CA008165BE /* AppDelegate.swift in Sources */,
-				CE68C5072452EED700EF4616 /* StartUpAssembly.swift in Sources */,
+				CE68C5072452EED700EF4616 /* CovidStatsAssembly.swift in Sources */,
+				CE3C173E245F1CEE0042C342 /* PTableViewCellModels.swift in Sources */,
 				CE68C4FC2445071E00EF4616 /* TextCell.swift in Sources */,
+				CEE8820C24C0B2B80035D03B /* Date + Strings.swift in Sources */,
 				CE68C5002446004F00EF4616 /* ResultCell.swift in Sources */,
-				7BB28A7A241D39CA008165BE /* SceneDelegate.swift in Sources */,
+				CEE8821024C0BC040035D03B /* ResultCellModel.swift in Sources */,
+				CE3C173A245F1A840042C342 /* ImageCellModel.swift in Sources */,
+				CE34BDE8247581D800776FAD /* NetworkProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,8 +536,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7YX6TD2TM8;
+				DEVELOPMENT_TEAM = A58264M4D6;
 				INFOPLIST_FILE = "Swift-Tutorial/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -419,8 +556,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7YX6TD2TM8;
+				DEVELOPMENT_TEAM = A58264M4D6;
 				INFOPLIST_FILE = "Swift-Tutorial/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

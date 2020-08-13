@@ -2,36 +2,36 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Start Up View Controller-->
+        <!--Covid Stats View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="StartUpViewController" id="BYZ-38-t0r" customClass="StartUpViewController" customModule="Swift_Tutorial" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CovidStatsViewController" id="BYZ-38-t0r" customClass="CovidStatsViewController" customModule="Swift_Tutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cCu-On-ui4">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7Wo-Z0-VrR">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="cCu-On-ui4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XUi-7V-hls"/>
-                            <constraint firstItem="cCu-On-ui4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hk0-4S-HGz"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cCu-On-ui4" secondAttribute="bottom" id="p9f-qU-hpN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cCu-On-ui4" secondAttribute="trailing" id="sdX-sS-IVe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7Wo-Z0-VrR" secondAttribute="bottom" id="XuG-ho-FGK"/>
+                            <constraint firstItem="7Wo-Z0-VrR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZR8-wR-e60"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Wo-Z0-VrR" secondAttribute="trailing" id="Zkm-0h-Ysv"/>
+                            <constraint firstItem="7Wo-Z0-VrR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="w1A-HA-EVK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="TableView" destination="8bC-Xf-vdC" id="Cp0-uB-gF4"/>
-                        <outlet property="TbView" destination="cCu-On-ui4" id="X5Q-MJ-wcy"/>
+                        <outlet property="tableView" destination="7Wo-Z0-VrR" id="4uL-qD-Bvv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
